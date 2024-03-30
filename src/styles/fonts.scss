@@ -1,0 +1,21 @@
+$font-url: "../fonts/";
+$font-calvetica: "coolvetica rg";
+$font-proxima: "ProximaNovaCond-Regular";
+
+// Define mixins for different font weights and styles
+@mixin font-face(
+  $font-family,
+  $font-path,
+  $font-weight: normal,
+  $font-style: normal
+) {
+  @font-face {
+    font-family: $font-family;
+    src: url("#{$font-url}#{$font-path}.ttf") format("truetype");
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@include font-face($font-calvetica, "coolvetica rg", 400, normal);
+@include font-face($font-proxima, "ProximaNovaCond-Regular", 400, normal);

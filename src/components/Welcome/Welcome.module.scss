@@ -1,0 +1,116 @@
+@import "../../styles/variables.scss";
+@import "../../styles/fonts.scss";
+
+.root {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 8% 0%;
+  .wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    .text_block {
+      width: 50%;
+      display: grid;
+      place-items: flex-start;
+      h1 {
+        color: $black;
+        font-size: calc(#{$size}* 2.3);
+        margin: 0;
+        border-bottom: 2px solid $blue;
+        padding-bottom: 2%;
+        font-family: $font-calvetica;
+        font-weight: 300;
+      }
+      p {
+        color: $black;
+        font-size: calc(#{$size}/ 1.1);
+        font-family: $font-proxima;
+      }
+      button {
+        font-size: calc(#{$size}/ 1.1);
+        color: $white;
+        font-family: $font-proxima;
+        background-color: $blue;
+        border-radius: 15px;
+        border: 1px solid $blue;
+        padding: 2.5% 6%;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: (0px 3px 20px #979797);
+        &:hover {
+          background-color: transparent;
+          color: $blue;
+        }
+      }
+    }
+    img {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .root {
+    .wrapper {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .root {
+    // padding-top: 15%;
+    height: 400px;
+    .wrapper {
+      width: 90%;
+      .text_block {
+        width: 80%;
+        place-items: center;
+        h1 {
+          text-align: center;
+          font-size: 33px;
+        }
+        p {
+          text-align: center;
+          font-size: 17px;
+        }
+        button {
+          font-size: 17px;
+          width: 60%;
+        }
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .root {
+    .wrapper {
+      width: 90%;
+      .text_block {
+        width: 100%;
+        place-items: center;
+        h1 {
+          text-align: center;
+          font-size: 33px;
+        }
+        p {
+          text-align: center;
+          font-size: 16px;
+        }
+        button {
+          font-size: 16px;
+          width: 70%;
+        }
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+}

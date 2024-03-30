@@ -1,0 +1,275 @@
+@import "../../styles/variables.scss";
+@import "../../styles/fonts.scss";
+
+.root {
+  width: 70%;
+  display: grid;
+  place-items: center;
+  border-radius: 25px;
+  border: 1px solid $black;
+  background-color: #fff;
+  padding: 2% 0%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1002;
+  .wrapper {
+    .close_span {
+      position: absolute;
+      width: 3%;
+      top: -3%;
+      right: -4%;
+      transform: rotate(45deg);
+      cursor: pointer;
+      transition: all 0.3s;
+      z-index: 1;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .snow_1 {
+      position: absolute;
+      top: 0%;
+      left: 45%;
+    }
+    .snow_2 {
+      position: absolute;
+      top: 15%;
+      right: -3%;
+    }
+    .snow_3 {
+      position: absolute;
+      top: 30%;
+      left: -5%;
+    }
+    .snow_4 {
+      position: absolute;
+      top: 55%;
+      left: 60%;
+    }
+    .snow_5 {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+    }
+    .snow_6 {
+      position: absolute;
+      top: 90%;
+    }
+
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    .form_block {
+      width: 65%;
+      display: grid;
+      place-items: flex-start;
+      z-index: 1003 !important;
+      h2 {
+        margin: 0;
+        font-family: $font-calvetica;
+        font-weight: 300;
+        font-size: calc(#{$size}* 2);
+        border-bottom: 2px solid $blue;
+        padding-bottom: 2%;
+      }
+      p {
+        margin: 3% 0%;
+        font-size: calc(#{$size}/ 1.2);
+        font-family: $font-proxima;
+      }
+    }
+    form {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      input {
+        width: 96%;
+        margin-bottom: 2%;
+        border-radius: 15px;
+        background-color: transparent;
+        border: 1px solid $black;
+        color: $black;
+        font-size: calc(#{$size}/ 1.35);
+        font-family: $font-proxima;
+        padding: 1.5% 2%;
+        outline: none;
+        &::placeholder {
+          color: $black;
+          font-size: calc(#{$size}/ 1.35);
+          font-family: $font-proxima;
+        }
+      }
+      textarea {
+        width: 96%;
+        margin-bottom: 2%;
+        border-radius: 15px;
+        background-color: transparent;
+        border: 1px solid $black;
+        color: $black;
+        color: $black;
+        font-size: calc(#{$size}/ 1.35);
+        font-family: $font-proxima;
+        padding: 1.5% 2%;
+        outline: none;
+        resize: none;
+        height: 100px;
+        &::placeholder {
+          color: $black;
+          font-size: calc(#{$size}/ 1.35);
+          font-family: $font-proxima;
+        }
+      }
+      button {
+        font-size: calc(#{$size}/ 1.35);
+        color: $white;
+        font-family: $font-proxima;
+        background-color: $blue;
+        border-radius: 15px;
+        width: 50%;
+        border: 1px solid $blue;
+        padding: 2% 0%;
+        box-shadow: (0px 3px 20px #979797);
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background-color: transparent;
+          color: $blue;
+        }
+      }
+    }
+    .etaps_block {
+      width: 35%;
+      display: grid;
+      height: 100%;
+      place-items: center;
+
+      .etap {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        background-color: $blue;
+        border-radius: 15px;
+        height: 120px;
+        &:first-child {
+          background-color: #393e46;
+        }
+        margin-bottom: 3%;
+        div {
+          display: grid;
+          place-items: center;
+        }
+        h5 {
+          margin: 0;
+          font-size: calc(#{$size}/ 1.1);
+          color: $white;
+          font-family: $font-proxima;
+        }
+        p {
+          font-size: calc(#{$size}/ 1.35);
+          color: $white;
+          margin: 0;
+          margin-top: 2%;
+          font-family: $font-proxima;
+        }
+      }
+    }
+  }
+}
+
+.show_form {
+  opacity: 1 !important;
+  pointer-events: auto;
+  z-index: 1003;
+}
+
+@media screen and (max-width: 1100px) {
+  .root {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .root {
+    width: 90%;
+    .form_block {
+      form {
+        input {
+          padding: 2.5% 2%;
+        }
+        button {
+          padding: 2.5% 0%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .root {
+    width: 90%;
+    padding: 5% 0%;
+    border-radius: 7px;
+    .close_span {
+      top: -2% !important;
+      width: 5% !important;
+    }
+    .wrapper {
+      justify-content: center;
+      .form_block {
+        place-items: center;
+        width: 100%;
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 14px;
+          text-align: center;
+        }
+        form {
+          input {
+            padding: 2.5% 2%;
+            font-size: 14px;
+            border-radius: 7px;
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+          textarea {
+            font-size: 14px;
+            border-radius: 7px;
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+          button {
+            padding: 2.5% 0%;
+            font-size: 14px;
+            border-radius: 7px;
+            margin-top: 2%;
+            width: 100%;
+            &::placeholder {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .etaps_block {
+        display: none;
+      }
+    }
+    .snow_1,
+    .snow_2,
+    .snow_3,
+    .snow_4,
+    .snow_5,
+    .snow_6 {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,229 @@
+@import "../../styles/variables.scss";
+@import "../../styles/fonts.scss";
+
+.root {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 8% 0%;
+  padding-top: 4%;
+  .wrapper {
+    width: 80%;
+    display: grid;
+    place-items: center;
+    gap: 7%;
+    margin-bottom: 5%;
+    .text_block {
+      width: 100%;
+      display: grid;
+      place-items: flex-start;
+      h3 {
+        color: $black;
+        font-size: calc(#{$size}* 2);
+        margin: 0;
+        border-bottom: 2px solid $blue;
+        padding-bottom: 2%;
+        font-family: $font-calvetica;
+        font-weight: 300;
+        max-width: 25%;
+      }
+      p {
+        color: $black;
+        font-size: calc(#{$size}/ 1.1);
+        font-family: $font-proxima;
+        max-width: 50%;
+      }
+    }
+    .slider_row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      margin-top: -6%;
+      .slim {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2%;
+      }
+    }
+    .slider_row_2 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -6%;
+      margin-bottom: 5%;
+      .slim {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2%;
+      }
+    }
+  }
+}
+
+.slider {
+  width: 600px !important;
+  border-radius: 15px;
+  .slider_div {
+    width: 100%;
+    border-radius: 15px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    position: relative;
+  }
+  .image_div {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-size: cover;
+  }
+}
+
+.slider_slim {
+  width: 300px !important;
+  .slider_div {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    position: relative;
+    border-radius: 20px !important;
+  }
+  .image_div {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-size: cover;
+  }
+}
+.mobile_block {
+  display: none;
+}
+@media screen and (min-width: 1550px) {
+  .slider {
+    width: 750px !important;
+  }
+  .slider_slim {
+    width: 380px !important;
+  }
+  .slider_row_2 {
+    margin-top: -5% !important;
+    margin-bottom: 0% !important;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .slider {
+    width: 50% !important;
+  }
+  .slider_slim {
+    width: 19vw !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .root {
+    height: 100%;
+    padding-bottom: 0%;
+    .wrapper {
+      height: 100%;
+      .text_block {
+        width: 100%;
+        h3 {
+          max-width: 100%;
+        }
+        p {
+          max-width: 65%;
+        }
+      }
+    }
+  }
+  .slider_row,
+  .slider_row_2 {
+    display: grid !important;
+    place-items: center !important;
+    row-gap: 15px;
+  }
+  .slider_row {
+    margin-top: -15% !important;
+  }
+  .slider_row_2 {
+    margin-top: -15% !important;
+    margin-bottom: 15% !important;
+  }
+  .slim {
+    width: 100% !important;
+  }
+  .slider {
+    width: 100% !important;
+  }
+  .slider_slim {
+    width: 40vw !important;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .slider_row {
+    margin-top: -18% !important;
+  }
+  .slider_row_2 {
+    margin-top: -18% !important;
+    margin-bottom: 15% !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .root {
+    height: 100%;
+    .wrapper {
+      width: 90%;
+      height: 100%;
+      gap: 0;
+    }
+  }
+  .slider_row {
+    display: none !important;
+  }
+  .slider_row_2 {
+    display: none !important;
+  }
+  .mobile_block {
+    margin-top: -1% !important;
+    width: 100%;
+    row-gap: 20px;
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .root {
+    padding: 10% 0%;
+    padding-bottom: 2%;
+    margin-top: 10%;
+    .wrapper {
+      width: 90%;
+      .text_block {
+        width: 100%;
+        place-items: center;
+        h3 {
+          font-size: 30px;
+          max-width: 100%;
+          text-align: center;
+        }
+        p {
+          font-size: 16px;
+          max-width: 85%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
