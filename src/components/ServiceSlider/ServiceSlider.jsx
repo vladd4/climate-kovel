@@ -5,12 +5,12 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 import Left from "../../assets/left-button.png";
 import Right from "../../assets/right-button.png";
-import Slide1 from "../../assets/work/photo_2024-03-30_13-47-10.jpg";
-import Slide2 from "../../assets/work/photo_2024-03-30_13-47-08.jpg";
-import Slide3 from "../../assets/work/photo_2024-03-30_14-28-45.jpg";
-import Slide4 from "../../assets/work/photo_2024-03-30_14-28-52.jpg";
-import Slide5 from "../../assets/work/photo_2024-03-30_13-47-16.jpg";
-import Slide6 from "../../assets/work/photo_2024-03-30_14-29-02.jpg";
+import Slide1 from "../../assets/conditioner.png";
+import Slide2 from "../../assets/heat-pump.png";
+import Slide3 from "../../assets/fridge.png";
+import Slide4 from "../../assets/solar-panels.png";
+import Slide5 from "../../assets/recuperation.png";
+import Slide6 from "../../assets/ventilation.png";
 
 import { useRef, useState } from "react";
 import useResize from "../../hooks/useResize";
