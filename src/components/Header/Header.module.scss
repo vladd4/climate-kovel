@@ -6,8 +6,10 @@
   padding: 0.5% 0%;
   place-items: center;
   box-shadow: (0px -5px 20px #979797);
+  z-index: 1004;
   .wrapper {
     width: 90%;
+    z-index: 1004;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,6 +21,7 @@
       height: 20px;
       position: relative;
       cursor: pointer;
+      z-index: 1004;
 
       .span_1,
       .span_2,
@@ -29,6 +32,7 @@
         position: absolute;
         transition: all 0.3s;
         border-radius: 50px;
+        z-index: 1004;
       }
       .span_1 {
         top: 2%;
@@ -61,6 +65,78 @@
         opacity: 0.7;
       }
     }
+  }
+}
+
+.burger_root {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0%;
+  background-color: $black;
+  height: 100svh;
+  opacity: 0.5;
+  transform: translate(110%);
+  transition: all 0.7s ease-in-out;
+  z-index: 1003 !important;
+  font-family: $font-proxima;
+  .burger_wrapper {
+    width: 80%;
+    display: grid;
+    place-items: center;
+    color: $white;
+    button {
+      background-color: $blue;
+      border: 1px solid $blue;
+      border-radius: 7px;
+      color: $white;
+      width: 85%;
+      padding: 3% 0%;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 16px;
+      margin-top: 5%;
+      margin-bottom: 3%;
+      font-family: inherit;
+      box-shadow: (0px 2px 10px #979797);
+      &:hover {
+        background-color: transparent;
+        color: $blue;
+      }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        transition: all 0.3s;
+        color: $white;
+        margin: 2% 0%;
+      }
+    }
+  }
+}
+.burger_show {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.hamburger_clicked {
+  .span_1 {
+    transform: translateX(15px);
+    background-color: $blue !important;
+  }
+  .span_3 {
+    transform: translateX(15px);
+    background-color: $blue !important;
+  }
+  .span_2 {
+    background-color: $blue !important;
   }
 }
 

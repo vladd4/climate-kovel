@@ -62,7 +62,6 @@
 }
 @media screen and (max-width: 650px) {
   .root {
-    // padding-top: 15%;
     height: 400px;
     .wrapper {
       width: 90%;
@@ -79,6 +78,7 @@
         }
         button {
           font-size: 17px;
+          padding: 3% 6%;
           width: 60%;
         }
       }

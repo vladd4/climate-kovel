@@ -28,7 +28,7 @@
       button {
         width: 100%;
         border: none;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid #525252;
         background-color: transparent;
         display: flex;
         align-items: center;
@@ -70,6 +70,9 @@
         font-size: 30px;
       }
       .accordion {
+        button {
+          padding: 2% 0%;
+        }
         h3 {
           font-size: 18px;
           text-align: start;
@@ -78,6 +81,9 @@
         }
         div {
           font-size: 15px;
+        }
+        img {
+          width: 5%;
         }
       }
     }
