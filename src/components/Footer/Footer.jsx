@@ -60,16 +60,7 @@ const Footer = () => {
             src={Top}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           />
-          <p>
-            Company © 2024 All Rights Reserved. Created by{" "}
-            <a
-              href="https://www.qwantweb.com.ua"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Qwant Web
-            </a>
-          </p>
+          <p>Company © 2024 All Rights Reserved</p>
         </div>
       </article>
     </section>
