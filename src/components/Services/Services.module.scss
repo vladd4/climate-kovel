@@ -47,6 +47,12 @@
 @media screen and (min-width: 1550px) {
   .root {
     height: 670px;
+    .wrapper {
+      width: 95%;
+      div {
+        gap: 1%;
+      }
+    }
   }
 }
 @media screen and (max-width: 1100px) {
