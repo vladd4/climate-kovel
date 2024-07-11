@@ -57,7 +57,7 @@ const ServiceSlider = () => {
     <section className={styles.root}>
       <article className={styles.wrapper}>
         <div className={styles.text_block}>
-          <h3>Послуги, які ми надаємо:</h3>
+          <h2>Послуги, які ми надаємо:</h2>
           <p>
             Ми пропонуємо індивідуальний підхід до кожного клієнта, незалежно
             від обсягу проекту.
@@ -106,7 +106,7 @@ const ServiceSlider = () => {
 
                     <div className={styles.label}>
                       <div>
-                        <h5>{service.label}</h5>
+                        <h3>{service.label}</h3>
                         <p className={styles.hover_p}>{service.text}</p>
                       </div>
                     </div>

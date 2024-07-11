@@ -35,15 +35,15 @@ const Faq = () => {
   return (
     <section className={styles.root} id="faq">
       <article className={styles.wrapper}>
-        <h3>Часті запитання:</h3>
+        <h4>Часті запитання:</h4>
         <Accordion className={styles.accordion}>
           {faq_info.map((info) => {
             return (
               <AccordionItem key={info.title}>
                 <AccordionHeader>
-                  <h3 className={`accordion-title`}>
+                  <h4 className={`accordion-title`}>
                     {faq_info.indexOf(info) + 1}. {info.title}
-                  </h3>
+                  </h4>
                   <img alt="Close" src={Open} width={25} height={25} />
                 </AccordionHeader>
                 <AccordionBody>

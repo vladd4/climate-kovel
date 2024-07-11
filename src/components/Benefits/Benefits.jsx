@@ -46,7 +46,7 @@ const Benefits = () => {
   return (
     <section className={styles.root} id="benefits">
       <article className={styles.wrapper}>
-        <h2>Що ми пропонуємо клієнту:</h2>
+        <h3>Що ми пропонуємо клієнту:</h3>
         <p>
           Наша компанія пропонує спектр продуктів та послуг, які гарантують
           найвищу якість і задоволення потреб клієнтів.
@@ -60,7 +60,7 @@ const Benefits = () => {
               >
                 <div className={styles.circle}>
                   <img alt="Icon" src={item.icon} />
-                  <h3>{item.label}</h3>
+                  <h4>{item.label}</h4>
                   <p>{item.text}</p>
                 </div>
               </div>

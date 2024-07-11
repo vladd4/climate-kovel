@@ -9,7 +9,7 @@ const Location = () => {
       <article className={styles.wrapper}>
         <img alt="Location" src={Image} />
         <div className={styles.text_block}>
-          <h3>Де нас знайти:</h3>
+          <h4>Де нас знайти:</h4>
           <p>
             Завітайте до нас за адресою що розташована в самому центрі Ковеля.
             Зручне розташування поруч з дорогою забезпечить легкий доступ для

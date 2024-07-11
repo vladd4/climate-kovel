@@ -12,7 +12,7 @@
     width: 80%;
     display: grid;
     place-items: center;
-    h3 {
+    h4 {
       font-size: calc(#{$size}* 2);
       font-weight: 800;
       color: $black;
@@ -39,7 +39,7 @@
           opacity: 0.6;
         }
       }
-      h3 {
+      h4 {
         font-family: $font-calvetica;
         font-weight: 300 !important;
         text-transform: none;
@@ -66,14 +66,14 @@
   .root {
     .wrapper {
       width: 90%;
-      h3 {
+      h4 {
         font-size: 30px;
       }
       .accordion {
         button {
           padding: 2% 0%;
         }
-        h3 {
+        h4 {
           font-size: 18px;
           text-align: start;
           font-family: $font-proxima;

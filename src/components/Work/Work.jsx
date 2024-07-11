@@ -49,7 +49,7 @@ const Work = () => {
     <section className={styles.root} id="work">
       <article className={styles.wrapper}>
         <div className={styles.text_block}>
-          <h3>Результат нашої роботи:</h3>
+          <h4>Результат нашої роботи:</h4>
           <p>
             Ми пишаємося нашими досягненнями та відкриті до демонстрації
             результатів нашої роботи.

@@ -50,7 +50,7 @@ const AlertForm = () => {
         <img alt="Snow" className={styles.snow_5} src={Snow} />
         <img alt="Snow" className={styles.snow_6} src={Snow} />
         <div className={styles.form_block}>
-          <h2>Форма для зв'язку</h2>
+          <h5>Форма для зв'язку</h5>
           <p>
             Цікавить наша пропозиція? Заповніть нашу зручну форму зв'язку, і ми
             зв'яжемося з вами найближчим часом.

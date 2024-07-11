@@ -24,7 +24,6 @@ function App() {
   return (
     <div className="App">
       <Loader />
-      <AlertForm />
       <div className={`${formSlice.isClickedAlert ? "static" : ""}`}>
         <Header />
         <Welcome />
@@ -35,9 +34,9 @@ function App() {
         <Location />
         <Faq />
         <Form />
-
         <Footer />
       </div>
+      <AlertForm />
     </div>
   );
 }

@@ -72,7 +72,7 @@
       display: grid;
       place-items: flex-start;
       z-index: 1003 !important;
-      h2 {
+      h5 {
         margin: 0;
         font-family: $font-calvetica;
         font-weight: 300;
@@ -224,7 +224,7 @@
       .form_block {
         place-items: center;
         width: 100%;
-        h2 {
+        h5 {
           font-size: 30px;
         }
         p {
